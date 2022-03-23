@@ -8,28 +8,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Image/favicon.png">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Js file -->
+    <script src="./index.js" defer></script>
+
+    <!-- Icons link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
     <!-- scroll animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>HTML, CSS, and JS - Ali Reza</title>
-    <style>
-        
-    </style>
+    
 </head>
 <body>
     <nav>
         <a href="#"><img src="https://i.ibb.co/k8mqKHN/logo.png" alt="logo"></a>
         
-        <ul>
-            <li class="item1"><a href="#">Home</a></li>
-            <li class="item2"><a href="#">Portfolio</a></li>
-            <li class="item3"><a href="#">Pages</a></li>
-            <li class="item4"><a href="#">Blog</a></li>
-        </ul>
+        <div class="menu" id="menu">
+            <ul>
+                <li class="item1">
+                    <a href="#">Home</a>
+                </li>
+                <li class="item2">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="item3">
+                    <a href="#">Pages</a>
+                </li>
+                <li class="item4">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="item4 screen-lg-hidden">
+                    <a href="#" class="navbar--btn">Sign In</a>
+                </li>
+                <li class="item4 screen-lg-hidden">
+                    <a href="#" class="navbar--btn login--btn">Login</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="button">
-            <a href="#">Sign In</a>
-            <a href="#">Login</a>
+            <a href="#" class="navbar--btn">Sign In</a>
+            <a href="#" class="navbar--btn login--btn">Login</a>
         </div>
+
+        <button class="btn screen-lg-hidden theme-toggle-btn" id="theme-toggle-btn">
+           <i class="uil uil-align-justify open-menu"></i>
+           <i class="uil uil-multiply close-menu"></i>
+        </button>
     </nav>
 
 
